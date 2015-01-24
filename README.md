@@ -10,7 +10,7 @@ This project is used for my learning Stylus and Jade.
 
 ## Documentation
 
-[Official Guide](https://0x142857.github.io/oh-my-css/)
+[Official Guide](http://ohmycss.com/)
 
 ## License
 
