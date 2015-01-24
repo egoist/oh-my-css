@@ -3,39 +3,106 @@
   <head>
     <meta charset="utf-8">
     <title>Oh My CSS</title>
+    <link href="./site/css/highlight.css" rel="stylesheet">
     <link href="./dist/css/ohmycss.css" rel="stylesheet">
+    <link href="./site/css/site.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="site">
     <nav class="nav">
       <div class="container">
         <h1 class="oh-brand"><a href="/">O</a></h1>
         <ul class="oh-menu">
-          <li><a href="#start">Get started</a></li>
+          <li><a href="#get-started">Get started</a></li>
+          <li><a href="#basic">Basic</a></li>
           <li><a href="#components">Components</a></li>
           <li><a href="#examples">Examples</a></li>
         </ul>
         <form class="oh-search">
           <input placeholder="Search" class="oh-search-input">
         </form>
+        <div class="fr">
+          <div class="star">
+            <iframe src="https://ghbtns.com/github-btn.html?user=0x142857&amp;repo=oh-my-css&amp;type=star&amp;count=true&amp;size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+          </div>
+        </div>
       </div>
     </nav>
     <section class="oh-main">
       <div class="container">
-        <h2 class="oh-h2">where amazing happens</h2>
-        <h3 id="components" class="oh-h3">Components</h3>
-        <h4 class="oh-h4">Buttons</h4>
-        <button class="oh-button button-default">Default</button>
-        <button class="oh-button button-green">Green</button>
-        <button class="oh-button button-red">Red</button>
+        <div class="row">
+          <div class="sidebar col-sm-3">
+            <nav class="anchorific"></nav>
+          </div>
+          <div class="main col-sm-9">
+            <h2 class="oh-h2">Pure css framework designed for the minimalist</h2>
+            <h3 class="oh-h3 doc">Get started</h3>
+            <h4 class="oh-h4 doc">Install</h4>Load Oh-My-CSS in your project<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- Oh My CSS core stylesheet --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"//cdn.ohmycss.com/latest/css/ohmycss.css"</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Oh My CSS lite version (without normalize.css) --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"//cdn.ohmycss.com/latest/css/ohmycss.lite.css"</span>&gt;</span>
+</code></pre>
+
+            <h3 id="basic" class="oh-h3 doc">Basic</h3>
+            <h4 class="oh-h4 doc">Heading</h4>
+            <div class="heading-example">
+              <h1 class="oh-h1">h1 Oh My CSS</h1>
+              <h2 class="oh-h2">h2 Oh My CSS</h2>
+              <h3 class="oh-h3">h3 Oh My CSS</h3>
+              <h4 class="oh-h4">h4 Oh My CSS</h4>
+              <h5 class="oh-h5">h5 Oh My CSS</h5>
+            </div>
+            <h4 class="oh-h4 doc">List</h4>
+            <ul>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3
+                <ul>
+                  <li>Child 1</li>
+                  <li>Child 2</li>
+                  <li>Child 3</li>
+                </ul>
+              </li>
+              <li>Item 4</li>
+              <li>Item 5</li>
+            </ul>
+            <h3 id="components" class="oh-h3 doc">Components</h3>
+            <h4 class="oh-h4 doc">Buttons</h4>
+            <button class="oh-button button-default">Default</button>
+            <button class="oh-button button-green">Green</button>
+            <button class="oh-button button-red">Red</button>
+            <button class="oh-button button-blue">Blue</button>
+            <h4 class="oh-h4 doc">Navbar</h4>
+            <div class="navbar-example">
+              <nav class="nav">
+                <div class="container">
+                  <h1 class="oh-brand"><a href="/">O</a></h1>
+                  <ul class="oh-menu">
+                    <li><a href="#start">Get started</a></li>
+                    <li><a href="#basic">Basic</a></li>
+                    <li><a href="#components">Components</a></li>
+                    <li><a href="#examples">Examples</a></li>
+                  </ul>
+                  <form class="oh-search">
+                    <input placeholder="Search" class="oh-search-input">
+                  </form>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <nav class="nav-footer">
       <div class="container">
         <div class="fl">
-          <h2 class="oh-sitename"><a href=/>Oh My CSS</a></h2>
+          <h2 class="oh-sitename"><a href="/">Oh My CSS</a></h2>
           <div class="oh-copy"><span>Made with love by 0x142857, inspired by LeanCloud</span></div>
         </div>
       </div>
     </nav>
+    <script src="./site/js/jquery.min.js"></script>
+    <script src="./site/js/anchorific.js"></script>
+    <script src="./site/js/index.js"></script>
   </body>
 </html>

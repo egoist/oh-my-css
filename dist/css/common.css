@@ -1,9 +1,17 @@
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 a {
   color: #333;
   text-decoration: none;
 }
 ul {
-  padding-left: 0;
+  padding-left: 20px;
+  font-weight: 300;
 }
 button,
 input {
@@ -16,7 +24,12 @@ input {
   color: #777;
 }
 .container {
-  padding: 0 30px;
+  padding: 0 4%;
+  margin: 0 auto;
+}
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
 }
 .fr {
   float: right;
@@ -25,7 +38,9 @@ input {
   float: left;
 }
 nav:after,
-.container:after {
+.container:after,
+.row:after,
+.sidebar:after {
   display: block;
   content: '.';
   clear: both;

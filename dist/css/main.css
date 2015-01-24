@@ -1,9 +1,15 @@
-.oh-h2 {
-  font-size: 48px;
+.oh-h1 {
+  font-size: 36px;
 }
-.oh-h3 {
+.oh-h2 {
   font-size: 30px;
 }
+.oh-h3 {
+  font-size: 24px;
+}
 .oh-h4 {
-  font-size: 20px;
+  font-size: 18px;
+}
+.oh-h5 {
+  font-size: 14px;
 }

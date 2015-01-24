@@ -17,6 +17,7 @@ nav.nav h1.oh-brand a {
 }
 nav.nav .oh-menu {
   margin: 0;
+  padding-left: 0;
   list-style: none;
   float: left;
 }
@@ -51,9 +52,12 @@ nav.nav .oh-search .oh-search-input:focus {
   background: #fff;
 }
 nav.nav-footer {
+  position: relative;
+  background: #fff;
   padding: 20px 0 0 0;
   margin: 20px 0 0 0;
   border-top: 1px solid #eee;
+  z-index: 9999;
 }
 nav.nav-footer .oh-sitename {
   font-size: 18px;

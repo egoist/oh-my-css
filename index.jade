@@ -3,29 +3,89 @@ html
   head
     meta(charset='utf-8')
     title Oh My CSS
+    link(href='./site/css/highlight.css' rel='stylesheet')
     link(href='./dist/css/ohmycss.css' rel='stylesheet')
-  body
+    link(href='./site/css/site.css' rel='stylesheet')
+  body.site
     nav.nav
       .container
         h1.oh-brand
           a(href='/') O
         ul.oh-menu
           li
-            a(href='#start') Get started
+            a(href='#get-started') Get started
+          li
+            a(href='#basic') Basic
           li
             a(href='#components') Components
           li
             a(href='#examples') Examples
         form.oh-search
           input.oh-search-input(placeholder='Search')
+        .fr
+          .star
+            iframe(src='https://ghbtns.com/github-btn.html?user=0x142857&repo=oh-my-css&type=star&count=true&size=large', frameborder='0', scrolling='0', width='160px', height='30px')
+
     section.oh-main
       .container
-        h2.oh-h2 where amazing happens
-        h3.oh-h3#components Components
-        h4.oh-h4 Buttons
-        button.oh-button.button-default Default
-        button.oh-button.button-green Green
-        button.oh-button.button-red Red
+        .row
+          .sidebar.col-sm-3
+            nav.anchorific
+          .main.col-sm-9
+            h2.oh-h2 Pure css framework designed for the minimalist
+            h3.oh-h3.doc Get started
+            h4.oh-h4.doc Install
+            |Load Oh-My-CSS in your project
+            :markdown
+              ```html
+              <!-- Oh My CSS core stylesheet -->
+              <link rel="stylesheet" href="//cdn.ohmycss.com/latest/css/ohmycss.css">
+
+              <!-- Oh My CSS lite version (without normalize.css) -->
+              <link rel="stylesheet" href="//cdn.ohmycss.com/latest/css/ohmycss.lite.css">
+              ```
+            h3.oh-h3.doc#basic Basic
+            h4.oh-h4.doc Heading
+            .heading-example
+              h1.oh-h1 h1 Oh My CSS
+              h2.oh-h2 h2 Oh My CSS
+              h3.oh-h3 h3 Oh My CSS
+              h4.oh-h4 h4 Oh My CSS
+              h5.oh-h5 h5 Oh My CSS
+            h4.oh-h4.doc List
+            ul
+              li Item 1
+              li Item 2
+              li Item 3
+                ul
+                  li Child 1
+                  li Child 2
+                  li Child 3
+              li Item 4
+              li Item 5
+            h3.oh-h3.doc#components Components
+            h4.oh-h4.doc Buttons
+            button.oh-button.button-default Default
+            button.oh-button.button-green Green
+            button.oh-button.button-red Red
+            button.oh-button.button-blue Blue
+            h4.oh-h4.doc Navbar
+            .navbar-example
+              nav.nav
+                .container
+                  h1.oh-brand
+                    a(href='/') O
+                  ul.oh-menu
+                    li
+                      a(href='#start') Get started
+                    li
+                      a(href='#basic') Basic
+                    li
+                      a(href='#components') Components
+                    li
+                      a(href='#examples') Examples
+                  form.oh-search
+                    input.oh-search-input(placeholder='Search')
     nav.nav-footer
       .container
         .fl
@@ -33,3 +93,6 @@ html
             a('href=/') Oh My CSS
           .oh-copy
             span Made with love by 0x142857, inspired by LeanCloud
+    script(src='./site/js/jquery.min.js')
+    script(src='./site/js/anchorific.js')
+    script(src='./site/js/index.js')
