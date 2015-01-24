@@ -253,7 +253,6 @@ nav.nav {
 }
 nav.nav h1.oh-brand {
   margin: 0;
-  padding: 0 15px;
   background: #fff;
   text-align: center;
   font-size: 24px;
@@ -261,6 +260,7 @@ nav.nav h1.oh-brand {
 }
 nav.nav h1.oh-brand a {
   display: block;
+  padding: 0 15px;
   color: #3090e4;
 }
 nav.nav .oh-menu {
