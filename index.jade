@@ -1,2 +1,30 @@
 doctype html
 html
+  head
+    meta(charset='utf-8')
+    title Oh My CSS
+    link(href='./dist/css/ohmycss.css' rel='stylesheet')
+  body
+    nav.nav
+      .container
+        h1.oh-brand
+          a(href='/') O
+        ul.oh-menu
+          li
+            a(href='#start') Get started
+          li
+            a(href='#components') Components
+          li
+            a(href='#examples') Examples
+        form.oh-search
+          input.oh-search-input(placeholder='Search')
+    section.oh-main
+      .container
+        h2.oh-board where amazing happens
+    nav.nav-footer
+      .container
+        .fl
+          h2.oh-sitename
+            a('href=/') Oh My CSS
+          .oh-copy
+            span Made with love by 0x142857, inspired by LeanCloud

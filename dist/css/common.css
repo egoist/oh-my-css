@@ -1,0 +1,34 @@
+a {
+  color: #333;
+  text-decoration: none;
+}
+ul {
+  padding-left: 0;
+}
+button,
+input {
+  outline: none;
+}
+::-webkit-input-placeholder {
+  color: #777;
+}
+::-moz-input-placeholder {
+  color: #777;
+}
+.container {
+  padding: 0 30px;
+}
+.fr {
+  float: right;
+}
+.fl {
+  float: left;
+}
+nav:after,
+.container:after {
+  display: block;
+  content: '.';
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}

@@ -1,0 +1,49 @@
+@import './extra/variable'
+
+nav
+  &.nav
+    height 48px
+    line-height 48px
+    background #f7f7f7
+    h1
+      &.oh-brand
+        margin 0
+        padding 0 15px
+        background white
+        text-align center
+        font-size 24px
+        float left
+        a
+          display block
+          color #3090e4
+    .oh-menu
+      margin 0
+      list-style none
+      float left
+      li
+        float left
+        a
+          color #777
+          padding 0 10px
+          display block
+          -webkit-transition background .2s ease
+          transition background .2s ease
+          &:hover
+            color #333
+            background #f0f0f0
+    @import './search'
+  &.nav-footer
+    padding 20px 0 0 0
+    margin 20px 0 0 0
+    border-top 1px solid #eee
+    .oh-sitename
+      font-size 18px
+      margin 0
+    .oh-copy
+      margin-top 5px
+      font-size 13px
+      color #ccc
+    a
+      color #999
+      &:hover
+        color #3090e4
