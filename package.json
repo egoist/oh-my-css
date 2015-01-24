@@ -1,0 +1,21 @@
+{
+  "name": "ohmycss",
+  "version": "0.1.0",
+  "description": "oh-my-css pure css framework",
+  "main": "index.html",
+  "scripts": {
+    "test": "gulp run"
+  },
+  "keywords": [
+    "css",
+    "framwork",
+    "front"
+  ],
+  "author": "0x142857 <0x142857@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-jade": "^0.11.0",
+    "gulp-stylus": "^2.0.0"
+  }
+}
