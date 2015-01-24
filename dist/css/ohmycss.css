@@ -288,6 +288,50 @@ nav.nav-footer a {
 nav.nav-footer a:hover {
   color: #3090e4;
 }
-.oh-board {
+.oh-h2 {
   font-size: 48px;
+}
+.oh-h3 {
+  font-size: 30px;
+}
+.oh-h4 {
+  font-size: 20px;
+}
+.oh-button {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+.button-default {
+  color: #333;
+  background-color: #f5f5f5;
+  border-color: #e7e7e7;
+}
+.button-default:hover {
+  background-color: #fff;
+}
+.button-green {
+  color: #fff;
+  background-color: #69db9b;
+  border-color: #69db9b;
+}
+.button-green:hover {
+  background-color: #40d180;
+  border-color: #2ebf6e;
+}
+.button-red {
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.button-red:hover {
+  background-color: #c9302c;
+  border-color: #ac2925;
 }
