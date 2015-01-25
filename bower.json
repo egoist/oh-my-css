@@ -6,7 +6,7 @@
     "0x142857 <0x142857@gmail.com>"
   ],
   "description": "pure css framework for the minimalist",
-  "main": "index.html",
+  "main": "dist/css/ohmycss.css",
   "keywords": [
     "css",
     "framework"
@@ -19,6 +19,7 @@
     "site",
     "CNAME",
     "*.jade",
+    "*.hmtl",
     "test",
     "tests"
   ]
