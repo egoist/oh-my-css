@@ -36,14 +36,19 @@ html
             h3.oh-h3.doc Get started
             span.version Current version: 0.1.1 (Unstable)
             h4.oh-h4.doc Install
-            |Load Oh-My-CSS in your project
             :markdown
+              **load Oh-My-CSS in your project**
               ```html
               <!-- Oh My CSS core stylesheet -->
               <link rel="stylesheet" href="//cdn.ohmycss.com/latest/css/ohmycss.css">
 
               <!-- Oh My CSS lite version (without normalize.css) -->
               <link rel="stylesheet" href="//cdn.ohmycss.com/latest/css/ohmycss.lite.css">
+              ```
+              or **Bower**
+
+              ```bash
+              bower install ohmycss --save
               ```
             h3.oh-h3.doc#basic Basic
             h4.oh-h4.doc Heading
@@ -87,6 +92,16 @@ html
                       a(href='#examples') Examples
                   form.oh-search
                     input.oh-search-input(placeholder='Search')
+            h4.oh-h4.doc Dropdown
+            .dropdown-example
+              button.dropdown.oh-button.button-default
+                | Dropdown
+                .dropdown-sep
+                ul.dropdown-menu
+                  li
+                    a(href='#') Item 1
+                  li
+                    a(href='#') Item 2
     nav.nav-footer
       .container
         .fl
