@@ -17,6 +17,7 @@
     "node_modules",
     "bower_components",
     "site",
+    "CNAME",
     "*.jade",
     "test",
     "tests"
