@@ -7,7 +7,7 @@
   cursor: pointer;
   border: 1px solid transparent;
   white-space: nowrap;
-  padding: 6px 10px;
+  padding: 6px 12px;
   border-radius: 2px;
 }
 .button-default {
@@ -50,6 +50,18 @@
 }
 .button-colorful:hover {
   opacity: 0.9;
+}
+.button-large {
+  padding: 10px 16px;
+  font-size: 18px;
+}
+.button-small {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+.button-mini {
+  padding: 1px 5px;
+  font-size: 12px;
 }
 .button-group .oh-button {
   float: left;
