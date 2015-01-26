@@ -19,7 +19,7 @@
     "site",
     "CNAME",
     "*.jade",
-    "*.hmtl",
+    "*.html",
     "test",
     "tests"
   ]
