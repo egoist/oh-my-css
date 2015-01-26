@@ -8,7 +8,7 @@
   border: 1px solid transparent;
   white-space: nowrap;
   padding: 6px 10px;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 .button-default {
   color: #333;
@@ -44,4 +44,23 @@
 .button-blue:hover {
   background-color: #0078e7;
   border-color: #0078e7;
+}
+.button-colorful {
+  border: 1px solid transparent;
+}
+.button-colorful:hover {
+  opacity: 0.9;
+}
+.button-group .oh-button {
+  float: left;
+}
+.button-group .oh-button+.oh-button {
+  margin-left: -1px;
+  border-radius: 0;
+}
+.button-group .oh-button:first-child {
+  border-radius: 2px 0 0 2px;
+}
+.button-group .oh-button:last-child {
+  border-radius: 0 2px 2px 0;
 }

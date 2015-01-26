@@ -45,7 +45,8 @@ input {
 nav:after,
 .container:after,
 .row:after,
-.sidebar:after {
+.sidebar:after,
+.button-group:after {
   display: block;
   content: '.';
   clear: both;
@@ -147,93 +148,142 @@ nav.nav-footer a:hover {
   border-radius: 2px;
   border: 1px solid #eee;
 }
+.white {
+  color: #fff !important;
+  border-color: #fff !important;
+  background-color: #fff !important;
+}
+.white-bg {
+  color: #333 !important;
+  border-color: #e7e7e7 !important;
+  background-color: #fff !important;
+}
+.white-bg:hover {
+  background-color: #f7f7f7 !important;
+}
 .gray {
-  color: #f5f5f5;
+  color: #f5f5f5 !important;
+  border-color: #f5f5f5 !important;
+  background-color: #fff !important;
 }
 .gray-bg {
-  color: #333;
-  background-color: #f5f5f5;
-  border-color: #e7e7e7;
+  color: #333 !important;
+  background-color: #f5f5f5 !important;
+  border-color: #e7e7e7 !important;
 }
 .light-purple {
-  color: #ebcef5;
+  color: #ebcef5 !important;
+  border-color: #ebcef5 !important;
+  background-color: #fff !important;
 }
 .light-purple-bg {
-  color: #fff;
-  border-color: #ebcef5;
-  background-color: #ebcef5;
+  color: #fff !important;
+  background-color: #ebcef5 !important;
+  border-color: #ebcef5 !important;
 }
 .yellow {
-  color: #ffe900;
+  color: #ffe900 !important;
+  border-color: #ffe900 !important;
+  background-color: #fff !important;
 }
 .yellow-bg {
-  color: #fff;
-  border-color: #ffe900;
-  background-color: #ffe900;
+  color: #fff !important;
+  background-color: #ffe900 !important;
+  border-color: #ffe900 !important;
 }
 .black {
-  color: #000;
+  color: #000 !important;
+  border-color: #000 !important;
+  background-color: #fff !important;
 }
 .black-bg {
-  color: #fff;
-  border-color: #000;
-  background-color: #000;
+  color: #fff !important;
+  background-color: #000 !important;
+  border-color: #000 !important;
 }
 .blue {
-  color: #3f729b;
+  color: #3f729b !important;
+  border-color: #3f729b !important;
+  background-color: #fff !important;
 }
 .blue-bg {
-  color: #fff;
-  border-color: #3f729b;
-  background-color: #3f729b;
+  color: #fff !important;
+  background-color: #3f729b !important;
+  border-color: #3f729b !important;
 }
 .green {
-  color: #009990;
+  color: #009990 !important;
+  border-color: #009990 !important;
+  background-color: #fff !important;
 }
 .green-bg {
-  color: #fff;
-  border-color: #009990;
-  background-color: #009990;
+  color: #fff !important;
+  background-color: #009990 !important;
+  border-color: #009990 !important;
 }
 .orange {
-  color: #ff9610;
+  color: #ff9610 !important;
+  border-color: #ff9610 !important;
+  background-color: #fff !important;
 }
 .orange-bg {
-  color: #fff;
-  border-color: #ff9610;
-  background-color: #ff9610;
+  color: #fff !important;
+  background-color: #ff9610 !important;
+  border-color: #ff9610 !important;
 }
 .brown {
-  color: #c28955;
+  color: #c28955 !important;
+  border-color: #c28955 !important;
+  background-color: #fff !important;
 }
 .brown-bg {
-  color: #fff;
-  border-color: #c28955;
-  background-color: #c28955;
+  color: #fff !important;
+  background-color: #c28955 !important;
+  border-color: #c28955 !important;
 }
 .pink {
-  color: #ff82a6;
+  color: #ff82a6 !important;
+  border-color: #ff82a6 !important;
+  background-color: #fff !important;
 }
 .pink-bg {
-  color: #fff;
-  border-color: #ff82a6;
-  background-color: #ff82a6;
+  color: #fff !important;
+  background-color: #ff82a6 !important;
+  border-color: #ff82a6 !important;
 }
 .red {
-  color: #f1504d;
+  color: #d9534f !important;
+  border-color: #d9534f !important;
+  background-color: #fff !important;
 }
 .red-bg {
-  color: #fff;
-  border-color: #f1504d;
-  background-color: #f1504d;
+  color: #fff !important;
+  background-color: #d9534f !important;
+  border-color: #d9534f !important;
 }
 .light-green {
-  color: #f1504d;
+  color: #f1504d !important;
+  border-color: #f1504d !important;
+  background-color: #fff !important;
 }
 .light-green-bg {
-  color: #fff;
-  border-color: #46b491;
-  background-color: #46b491;
+  color: #fff !important;
+  background-color: #46b491 !important;
+  border-color: #46b491 !important;
+}
+code {
+  background: #eee;
+  padding: 3px 5px;
+  border-radius: 2px;
+  font-weight: 300;
+  font-size: 13px;
+}
+pre {
+  background: #eee;
+  padding: 10px;
+}
+pre code {
+  padding: 0;
 }
 .oh-h1 {
   font-size: 36px;
@@ -260,7 +310,7 @@ nav.nav-footer a:hover {
   border: 1px solid transparent;
   white-space: nowrap;
   padding: 6px 10px;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 .button-default {
   color: #333;
@@ -296,6 +346,25 @@ nav.nav-footer a:hover {
 .button-blue:hover {
   background-color: #0078e7;
   border-color: #0078e7;
+}
+.button-colorful {
+  border: 1px solid transparent;
+}
+.button-colorful:hover {
+  opacity: 0.9;
+}
+.button-group .oh-button {
+  float: left;
+}
+.button-group .oh-button+.oh-button {
+  margin-left: -1px;
+  border-radius: 0;
+}
+.button-group .oh-button:first-child {
+  border-radius: 2px 0 0 2px;
+}
+.button-group .oh-button:last-child {
+  border-radius: 0 2px 2px 0;
 }
 .dropdown {
   position: relative;

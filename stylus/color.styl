@@ -1,81 +1,83 @@
+make-color(color,border-color,background-color)
+  color color !important
+  background-color background-color !important
+  border-color border-color !important
+
+serif-color(color)
+  color color !important unless @color
+  border-color color !important
+  background-color white !important
+
+bg-color(color)
+  color white !important unless @color
+  background-color color !important
+  border-color color !important unless @border-color
+
 .block
   padding 10px
   border-radius 2px
   border 1px solid #eee
 
+.white
+  serif-color(white)
+.white-bg
+  color #333 !important
+  border-color #e7e7e7 !important
+  bg-color(white)
+  &:hover
+    background-color #f7f7f7 !important
+
 .gray
-  color #f5f5f5
+  serif-color(#f5f5f5)
 .gray-bg
-  color #333
-  background-color #f5f5f5
-  border-color #e7e7e7
+  make-color(#333,#e7e7e7,#f5f5f5)
 
 .light-purple
-  color #ebcef5
+  serif-color(#ebcef5)
 .light-purple-bg
-  color #fff
-  border-color #ebcef5
-  background-color #ebcef5
+  make-color(white,#ebcef5,#ebcef5) 
 
 .yellow
-  color #ffe900
+  serif-color(#ffe900)
 .yellow-bg
-  color #fff
-  border-color #ffe900
-  background-color #ffe900
+  make-color(white,#ffe900,#ffe900)
 
 .black
-  color #000
+  serif-color(black)
 .black-bg
-  color #fff
-  border-color #000
-  background-color #000
+  make-color(white,black,black)
 
 .blue
-  color #3f729b
+  serif-color(#3f729b)
 .blue-bg
-  color #fff
-  border-color #3f729b
-  background-color #3f729b
+  make-color(white,#3f729b,#3f729b)
 
 .green
-  color #009990
+  serif-color(#009990)
 .green-bg
-  color #fff
-  border-color #009990
-  background-color #009990
+  make-color(white,#009990,#009990)
 
 .orange
-  color #ff9610
+  serif-color(#ff9610)
 .orange-bg
-  color #fff
-  border-color #ff9610
-  background-color #ff9610
+  make-color(white,#ff9610,#ff9610)
 
 .brown
-  color #c28955
+  serif-color(#c28955)
 .brown-bg
-  color #fff
-  border-color #c28955
-  background-color #c28955
+  make-color(white,#c28955,#c28955)
 
 .pink
-  color #ff82a6
+  serif-color(#ff82a6)
 .pink-bg
-  color #fff
-  border-color #ff82a6
-  background-color #ff82a6
+  make-color(white,#ff82a6,#ff82a6)
 
 .red
-  color #f1504d
+  serif-color(#d9534f)
 .red-bg
-  color #fff
-  border-color #f1504d
-  background-color #f1504d
+  make-color(white,#d9534f,#d9534f)
 
 .light-green
-  color #f1504d
+  serif-color(#f1504d)
 .light-green-bg
-  color #fff
-  border-color #46b491
-  background-color #46b491
+  make-color(white,#46b491,#46b491)

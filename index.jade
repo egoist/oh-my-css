@@ -75,6 +75,36 @@ html
             button.oh-button.button-green Green
             button.oh-button.button-red Red
             button.oh-button.button-blue Blue
+            .explain
+              :markdown
+                Custom button color? use class `oh-button button-colorful COLOR` to customize
+
+                We now support 
+                ```html
+                white white-bg
+                gray gray-bg 
+                light-purple light-purple-bg 
+                yellow yellow-bg
+                black black-bg
+                blue blue-bg
+                green green-bg
+                orange orange-bg
+                brown brown-bg
+                pink pink-bg
+                red red-bg
+                light-green light-green-bg
+                ```
+
+              button.oh-button.button-colorful.red Red Ghost
+              button.oh-button.button-colorful.light-green-bg Light green
+              button.oh-button.button-colorful.brown-bg Brown
+              button.oh-button.button-colorful.pink-bg Pink
+
+            h4.oh-h4.doc Button group
+            .button-group
+              button.oh-button.button-default.white-bg Left
+              button.oh-button.button-default.white-bg Middle
+              button.oh-button.button-default.white-bg Right
             h4.oh-h4.doc Navbar
             .navbar-example
               nav.nav

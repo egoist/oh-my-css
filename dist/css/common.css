@@ -40,7 +40,8 @@ input {
 nav:after,
 .container:after,
 .row:after,
-.sidebar:after {
+.sidebar:after,
+.button-group:after {
   display: block;
   content: '.';
   clear: both;

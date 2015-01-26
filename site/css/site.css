@@ -1,6 +1,10 @@
 .site .block {
   margin-bottom: 10px;
 }
+.site .fang {
+  width: 4px;
+  height: 4px;
+}
 .site .star {
   height: 48px;
   line-height: 68px;
