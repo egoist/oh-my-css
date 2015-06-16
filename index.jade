@@ -52,6 +52,13 @@ html
               ```
             h3.oh-h3.doc#basic Basic
             h4.oh-h4.doc Heading
+            :markdown
+              ```html
+              <h1 class="oh-h1">heading 1</h1>
+              <h2 class="oh-h2">heading 2</h2>
+              <h3 class="oh-h3">heading 3</h3>
+              ... and so on
+              ```
             .heading-example
               h1.oh-h1 h1 Oh My CSS
               h2.oh-h2 h2 Oh My CSS
@@ -76,7 +83,12 @@ html
             button.oh-button.button-red Red
             button.oh-button.button-blue Blue
             p
-              | Do wanna bigger or smaller button? try:
+              | Do wanna bigger or smaller button? 
+              | try the markup:
+            :markdown
+              ```html
+              <button class="oh-button button-$SIZE">button text</button> // $SIZE in ['default','large','small','mini']
+              ```
             p 
               button.oh-button.button-default.button-large Large button
             p
@@ -112,11 +124,40 @@ html
               button.oh-button.button-colorful.pink-bg Pink
 
             h4.oh-h4.doc Button group
+            | HTML markup:
+            :markdown
+              ```html
+              <div class="button-group">
+                <button class="oh-button button-default white-bg">Left</div>
+                <button class="oh-button button-default white-bg">Middle</div>
+                <button class="oh-button button-default white-bg">Addon</div>
+                <button class="oh-button button-default white-bg">Right</div>
+              </div>
+              ```
             .button-group
               button.oh-button.button-default.white-bg Left
               button.oh-button.button-default.white-bg Middle
+              button.oh-button.button-default.white-bg Addon
               button.oh-button.button-default.white-bg Right
             h4.oh-h4.doc Navbar
+            | HTML markup:
+            :markdown
+              ```html
+              <nav class="nav">
+                <div class="container">
+                  <h1 class="oh-brand"><a href="/">O</a></h1>
+                  <ul class="oh-menu">
+                    <li><a href="#start">Get started</a></li>
+                    <li><a href="#basic">Basic</a></li>
+                    <li><a href="#components">Components</a></li>
+                    <li><a href="#examples">Examples</a></li>
+                  </ul>
+                  <form class="oh-search">
+                    <input placeholder="Search" class="oh-search-input">
+                  </form>
+                </div>
+              </nav>
+              ```
             .navbar-example
               nav.nav
                 .container
@@ -134,6 +175,17 @@ html
                   form.oh-search
                     input.oh-search-input(placeholder='Search')
             h4.oh-h4.doc Dropdown
+            | HTML markup:
+            :markdown
+              ```html
+              <button class="dropdown oh-button button-default">Dropdown
+                <div class="dropdown-sep"></div>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Item 1</a></li>
+                  <li><a href="#">Item 2</a></li>
+                </ul>
+              </button>
+              ```
             .dropdown-example
               button.dropdown.oh-button.button-default
                 | Dropdown
@@ -144,6 +196,11 @@ html
                   li
                     a(href='#') Item 2
             h4.oh-h4.doc Block
+            | HTML markup:
+            :markdown
+              ```html
+              <div class="block $COLOR-bg">Block</div> // $COLOR shows following, like `gray-bg`
+              ```
             .block-example
               .block.gray-bg Gray
               .block.light-purple-bg Light purple
@@ -164,7 +221,7 @@ html
           .oh-copy
             span 
             | Made with love by 
-            a(href='https://0x142857.com') 0x142857
+            a(href='http://insekai.com') INSEKAI
             |  , inspired by LeanCloud
     script(src='./site/js/jquery.min.js')
     script(src='./site/js/anchorific.js')

@@ -47,4 +47,4 @@ gulp.task('watch', function() {
 
 });
 
-gulp.task('run', ['jade', 'styl', 'site', 'watch']);
+gulp.task('default', ['jade', 'styl', 'site', 'watch']);

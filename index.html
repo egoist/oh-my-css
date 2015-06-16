@@ -48,7 +48,12 @@
 </code></pre>
 
             <h3 id="basic" class="oh-h3 doc">Basic</h3>
-            <h4 class="oh-h4 doc">Heading</h4>
+            <h4 class="oh-h4 doc">Heading</h4><pre><code class="lang-html">&lt;h1 class=<span class="hljs-string">"oh-h1"</span>&gt;heading <span class="hljs-number">1</span>&lt;/h1&gt;
+&lt;h2 class=<span class="hljs-string">"oh-h2"</span>&gt;heading <span class="hljs-number">2</span>&lt;/h2&gt;
+&lt;h3 class=<span class="hljs-string">"oh-h3"</span>&gt;heading <span class="hljs-number">3</span>&lt;/h3&gt;
+<span class="hljs-keyword">...</span> and so on
+</code></pre>
+
             <div class="heading-example">
               <h1 class="oh-h1">h1 Oh My CSS</h1>
               <h2 class="oh-h2">h2 Oh My CSS</h2>
@@ -76,7 +81,12 @@
             <button class="oh-button button-green">Green</button>
             <button class="oh-button button-red">Red</button>
             <button class="oh-button button-blue">Blue</button>
-            <p>Do wanna bigger or smaller button? try:</p>
+            <p>
+              Do wanna bigger or smaller button? 
+              try the markup:
+            </p><pre><code class="lang-html">&lt;button class=<span class="hljs-string">"oh-button button-<span class="hljs-variable">$SIZE</span>"</span>&gt;button text&lt;/button&gt; // <span class="hljs-variable">$SIZE</span> <span class="hljs-keyword">in</span> [<span class="hljs-string">'default'</span>,<span class="hljs-string">'large'</span>,<span class="hljs-string">'small'</span>,<span class="hljs-string">'mini'</span>]
+</code></pre>
+
             <p> 
               <button class="oh-button button-default button-large">Large button</button>
             </p>
@@ -110,13 +120,36 @@ light<span class="hljs-attribute">-green</span> light<span class="hljs-attribute
               <button class="oh-button button-colorful brown-bg">Brown</button>
               <button class="oh-button button-colorful pink-bg">Pink</button>
             </div>
-            <h4 class="oh-h4 doc">Button group</h4>
+            <h4 class="oh-h4 doc">Button group</h4>HTML markup:<pre><code class="lang-html">&lt;<span class="hljs-keyword">div</span> <span class="hljs-type">class</span>=<span class="hljs-string">"button-group"</span>&gt;
+  &lt;button <span class="hljs-type">class</span>=<span class="hljs-string">"oh-button button-default white-bg"</span>&gt;Left&lt;/<span class="hljs-keyword">div</span>&gt;
+  &lt;button <span class="hljs-type">class</span>=<span class="hljs-string">"oh-button button-default white-bg"</span>&gt;Middle&lt;/<span class="hljs-keyword">div</span>&gt;
+  &lt;button <span class="hljs-type">class</span>=<span class="hljs-string">"oh-button button-default white-bg"</span>&gt;Addon&lt;/<span class="hljs-keyword">div</span>&gt;
+  &lt;button <span class="hljs-type">class</span>=<span class="hljs-string">"oh-button button-default white-bg"</span>&gt;Right&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+
             <div class="button-group">
               <button class="oh-button button-default white-bg">Left</button>
               <button class="oh-button button-default white-bg">Middle</button>
+              <button class="oh-button button-default white-bg">Addon</button>
               <button class="oh-button button-default white-bg">Right</button>
             </div>
-            <h4 class="oh-h4 doc">Navbar</h4>
+            <h4 class="oh-h4 doc">Navbar</h4>HTML markup:<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">nav</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"nav"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"container"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"oh-brand"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"/"</span>&gt;</span>O<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"oh-menu"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#start"</span>&gt;</span>Get started<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#basic"</span>&gt;</span>Basic<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#components"</span>&gt;</span>Components<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#examples"</span>&gt;</span>Examples<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"oh-search"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Search"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"oh-search-input"</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">nav</span>&gt;</span>
+</code></pre>
+
             <div class="navbar-example">
               <nav class="nav">
                 <div class="container">
@@ -133,7 +166,15 @@ light<span class="hljs-attribute">-green</span> light<span class="hljs-attribute
                 </div>
               </nav>
             </div>
-            <h4 class="oh-h4 doc">Dropdown</h4>
+            <h4 class="oh-h4 doc">Dropdown</h4>HTML markup:<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"dropdown oh-button button-default"</span>&gt;</span>Dropdown
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"dropdown-sep"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"dropdown-menu"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Item 1<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Item 2<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+</code></pre>
+
             <div class="dropdown-example">
               <button class="dropdown oh-button button-default">Dropdown
                 <div class="dropdown-sep"></div>
@@ -143,7 +184,9 @@ light<span class="hljs-attribute">-green</span> light<span class="hljs-attribute
                 </ul>
               </button>
             </div>
-            <h4 class="oh-h4 doc">Block</h4>
+            <h4 class="oh-h4 doc">Block</h4>HTML markup:<pre><code class="lang-html">&lt;<span class="hljs-operator">div</span> class=<span class="hljs-string">"block $COLOR-bg"</span>&gt;Block&lt;/<span class="hljs-operator">div</span>&gt;<span class="hljs-comment"> // $COLOR shows following, like `gray-bg`</span>
+</code></pre>
+
             <div class="block-example">
               <div class="block gray-bg">Gray</div>
               <div class="block light-purple-bg">Light purple</div>
@@ -165,7 +208,7 @@ light<span class="hljs-attribute">-green</span> light<span class="hljs-attribute
       <div class="container">
         <div class="fl">
           <h2 class="oh-sitename"><a href="/">Oh My CSS</a></h2>
-          <div class="oh-copy"><span> </span>Made with love by <a href="https://0x142857.com">0x142857</a> , inspired by LeanCloud</div>
+          <div class="oh-copy"><span> </span>Made with love by <a href="http://insekai.com">INSEKAI</a> , inspired by LeanCloud</div>
         </div>
       </div>
     </nav>

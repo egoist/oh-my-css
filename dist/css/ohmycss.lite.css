@@ -3,9 +3,7 @@ body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   line-height: 1.4;
 }
-*,
-:after,
-:before {
+* {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -431,4 +429,10 @@ pre code {
 .dropdown .dropdown-menu:before {
   top: -9px;
   border-bottom-color: rgba(0,0,0,0.1);
+}
+.state {
+  display: inline-block;
+}
+[class*="state-"] {
+  color: #fff;
 }
