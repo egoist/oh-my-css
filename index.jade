@@ -4,8 +4,8 @@ html
     meta(charset='utf-8')
     title Oh My CSS
     link(href='./site/css/highlight.css' rel='stylesheet')
-    link(href='./dist/css/ohmycss.css' rel='stylesheet')
-    link(href='./site/css/site.css' rel='stylesheet')
+    link(href='./dist/css/ohmycss.css?t=#{time}' rel='stylesheet')
+    link(href='./site/css/site.css?t=#{time}' rel='stylesheet')
   body.site
     nav.nav
       .container
@@ -250,4 +250,4 @@ html
             |  , inspired by LeanCloud
     script(src='./site/js/jquery.min.js')
     script(src='./site/js/anchorific.js')
-    script(src='./site/js/index.js')
+    script(src='./site/js/index.js?t=#{time}')

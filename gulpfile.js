@@ -44,7 +44,10 @@ gulp.task('site', function () {
 gulp.task('jade', function () {
   gulp.src(paths.jade)
     .pipe(jade({
-      pretty: true
+      pretty: true,
+      locals: {
+        time: new Date().getTime()
+      }
     }))
     .pipe(highlight())
     .pipe(gulp.dest('./'));
