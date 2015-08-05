@@ -20,11 +20,6 @@
     "gulp-stylus": "^2.0.0",
     "marked": "^0.3.2"
   },
-  "dependencies": {
-    "gulp-jade": "^0.11.0",
-    "gulp": "^3.8.10",
-    "gulp-stylus": "^2.0.0"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/0x142857/oh-my-css.git"
@@ -32,5 +27,10 @@
   "bugs": {
     "url": "https://github.com/0x142857/oh-my-css/issues"
   },
-  "homepage": "https://github.com/0x142857/oh-my-css"
+  "homepage": "https://github.com/0x142857/oh-my-css",
+  "dependencies": {
+    "gulp-cssmin": "^0.1.7",
+    "gulp-rename": "^1.2.2",
+    "nib": "^1.1.0"
+  }
 }

@@ -1,9 +1,6 @@
-@import './extra/variable'
-
 nav
   &.nav
-    height 48px
-    line-height 48px
+    text-height 48px
     background #f7f7f7
     h1
       &.oh-brand
@@ -31,8 +28,20 @@ nav
           transition background .2s ease
           &:hover
             color #333
-            background #f0f0f0
-    @import './search'
+            background-color #f0f0f0
+    &.nav-inverse
+      background-color white
+      border-bottom 1px solid #eee
+      h1
+        &.oh-brand
+          background-color #f9f9f9
+      a
+        text-height 47px
+      .oh-menu
+        li
+          a
+            &:hover
+              background-color #f9f9f9
   &.nav-footer
     position relative
     background white
@@ -51,3 +60,5 @@ nav
       color #ccc
       &:hover
         color #3090e4
+        
+@import './search'

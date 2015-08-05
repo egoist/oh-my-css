@@ -1,21 +1,30 @@
 var gulp = require('gulp'),
     stylus = require('gulp-stylus'),
     highlight = require('gulp-highlight'),
-    jade = require('gulp-jade');
+    jade = require('gulp-jade'),
+    nib = require('nib'),
+    cssmin = require('gulp-cssmin'),
+    rename = require('gulp-rename')
 
 var paths = {
-  site: ['./site/stylus/*.styl'],
+  site: ['./site/stylus/*.styl', './site/stylus/extra/*.styl'],
   styl: ['./stylus/*.styl'],
+  stylMain: ['./stylus/ohmycss.styl', './stylus/ohmycss.lite.styl'],
   jade: ['./*.jade']
 };
 
 gulp.task('styl', function () {
 
-  gulp.src(paths.styl)
+  gulp.src(paths.stylMain)
     .pipe(stylus({
       compress: false
     }))
-    .pipe(gulp.dest('./dist/css'));
+    .pipe(gulp.dest('./dist/css'))
+    .pipe(cssmin())
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(gulp.dest('./dist/css'))
 
 });
 
@@ -23,7 +32,9 @@ gulp.task('site', function () {
 
   gulp.src(paths.site)
     .pipe(stylus({
-      compress: false
+      compress: false,
+      use: nib(),
+      import: ['nib']
     }))
     .pipe(gulp.dest('./site/css'));
 

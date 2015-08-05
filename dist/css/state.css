@@ -1,6 +1,0 @@
-.state {
-  display: inline-block;
-}
-[class*="state-"] {
-  color: #fff;
-}

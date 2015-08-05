@@ -37,7 +37,7 @@ html
             span.version Current version: 0.1.3 (Unstable)
             h4.oh-h4.doc Install
             :markdown
-              **load Oh-My-CSS in your project**
+              **load Oh-My-CSS in your project**, CDN is not yet availale
               ```html
               <!-- Oh My CSS core stylesheet -->
               <link rel="stylesheet" href="//cdn.ohmycss.com/latest/css/ohmycss.css">
@@ -54,17 +54,17 @@ html
             h4.oh-h4.doc Heading
             :markdown
               ```html
-              <h1 class="oh-h1">heading 1</h1>
-              <h2 class="oh-h2">heading 2</h2>
-              <h3 class="oh-h3">heading 3</h3>
+              <h1>heading 1</h1>
+              <h2>heading 2</h2>
+              <h3>heading 3</h3>
               ... and so on
               ```
             .heading-example
-              h1.oh-h1 h1 Oh My CSS
-              h2.oh-h2 h2 Oh My CSS
-              h3.oh-h3 h3 Oh My CSS
-              h4.oh-h4 h4 Oh My CSS
-              h5.oh-h5 h5 Oh My CSS
+              h1 h1 Oh My CSS
+              h2 h2 Oh My CSS
+              h3 h3 Oh My CSS
+              h4 h4 Oh My CSS
+              h5 h5 Oh My CSS
             h4.oh-h4.doc List
             ul
               li Item 1
@@ -160,6 +160,31 @@ html
               ```
             .navbar-example
               nav.nav
+                .container
+                  h1.oh-brand
+                    a(href='/') O
+                  ul.oh-menu
+                    li
+                      a(href='#start') Get started
+                    li
+                      a(href='#basic') Basic
+                    li
+                      a(href='#components') Components
+                    li
+                      a(href='#examples') Examples
+                  form.oh-search
+                    input.oh-search-input(placeholder='Search')
+            p
+              b Navbar with white background
+            | HTML markup:
+            :markdown
+              ```
+              <nav class="nav nav-inverse">
+                ...
+              </nav>
+              ```
+            .navbar-example
+              nav.nav.nav-inverse
                 .container
                   h1.oh-brand
                     a(href='/') O

@@ -100,23 +100,21 @@ nav.nav .oh-menu li a {
 }
 nav.nav .oh-menu li a:hover {
   color: #333;
-  background: #f0f0f0;
+  background-color: #f0f0f0;
 }
-nav.nav .oh-search {
-  float: left;
+nav.nav.nav-inverse {
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
 }
-nav.nav .oh-search .oh-search-input {
-  display: inline-block;
-  height: 48px;
-  border: none;
-  background: transparent;
-  color: #777;
-  padding: 0 10px;
-  -webkit-transition: background 0.2s ease;
-  transition: background 0.2s ease;
+nav.nav.nav-inverse h1.oh-brand {
+  background-color: #f9f9f9;
 }
-nav.nav .oh-search .oh-search-input:focus {
-  background: #fff;
+nav.nav.nav-inverse a {
+  height: 47px;
+  line-height: 47px;
+}
+nav.nav.nav-inverse .oh-menu li a:hover {
+  background-color: #f9f9f9;
 }
 nav.nav-footer {
   position: relative;
@@ -140,6 +138,27 @@ nav.nav-footer a {
 }
 nav.nav-footer a:hover {
   color: #3090e4;
+}
+.oh-search {
+  float: left;
+}
+.oh-search .oh-search-input {
+  display: inline-block;
+  height: 48px;
+  line-height: 48px;
+  border: none;
+  background: transparent;
+  color: #777;
+  padding: 0 10px;
+  -webkit-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+}
+.oh-search .oh-search-input:focus {
+  background: #fff;
+}
+.nav-inverse .oh-search .oh-search-input {
+  height: 46px;
+  line-height: 46px;
 }
 .block {
   padding: 10px;
@@ -283,19 +302,19 @@ pre {
 pre code {
   padding: 0;
 }
-.oh-h1 {
+h1 {
   font-size: 36px;
 }
-.oh-h2 {
+h2 {
   font-size: 30px;
 }
-.oh-h3 {
+h3 {
   font-size: 24px;
 }
-.oh-h4 {
+h4 {
   font-size: 18px;
 }
-.oh-h5 {
+h5 {
   font-size: 14px;
 }
 .oh-button {
